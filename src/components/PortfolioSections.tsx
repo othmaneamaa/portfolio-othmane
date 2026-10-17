@@ -271,30 +271,43 @@ export function ProjectsSection() {
     <Page eyebrow={en ? "04 — Projects" : "04 — Projets"} title={en ? "Projects" : "Projets"} subtitle={en ? "Ideas turned into products." : "Des idées transformées en produits."}>
       <div className="grid gap-5 md:grid-cols-2">
         {projects.map((item, index) => (
-          <Card key={item.title} delay={index * 0.06} className="group flex flex-col !p-0 overflow-hidden">
-            <div className={`h-1.5 w-full bg-gradient-to-r ${projectAccent[index % projectAccent.length]}`} />
-            <div className="p-6">
-              <div className="mb-3 flex items-start justify-between gap-3">
-                <div className="flex items-center gap-3">
-                  <span className="mono grid h-8 w-8 place-items-center rounded-xl bg-slate-900 text-[11px] font-bold text-white dark:bg-white dark:text-slate-900">
-                    0{index + 1}
-                  </span>
-                  <h2 className="display text-lg font-extrabold leading-tight">{item.title}</h2>
+          <a
+            key={item.title}
+            href={`/projects/${item.slug}`}
+            className="group block"
+          >
+            <Card delay={index * 0.06} className="group flex flex-col !p-0 overflow-hidden h-full">
+              <div className={`h-1.5 w-full bg-gradient-to-r ${projectAccent[index % projectAccent.length]}`} />
+              <div className="p-6 flex flex-col flex-1 justify-between">
+                <div>
+                  <div className="mb-3 flex items-start justify-between gap-3">
+                    <div className="flex items-center gap-3">
+                      <span className="mono grid h-8 w-8 place-items-center rounded-xl bg-slate-900 text-[11px] font-bold text-white dark:bg-white dark:text-slate-900">
+                        0{index + 1}
+                      </span>
+                      <h2 className="display text-lg font-extrabold leading-tight">{item.title}</h2>
+                    </div>
+                    <span className="grid h-8 w-8 place-items-center rounded-xl border border-slate-200 bg-white text-slate-400 transition group-hover:border-slate-900 group-hover:text-slate-900 dark:border-white/10 dark:bg-white/5 dark:group-hover:border-white dark:group-hover:text-white">
+                      <ArrowUpRight size={16} />
+                    </span>
+                  </div>
+                  <p className="text-[14.5px] leading-7 text-slate-600 dark:text-slate-300">{item.description}</p>
                 </div>
-                <span className="grid h-8 w-8 place-items-center rounded-xl border border-slate-200 bg-white text-slate-400 transition group-hover:border-slate-900 group-hover:text-slate-900 dark:border-white/10 dark:bg-white/5 dark:group-hover:border-white dark:group-hover:text-white">
-                  <ArrowUpRight size={16} />
-                </span>
-              </div>
-              <p className="text-[14.5px] leading-7 text-slate-600 dark:text-slate-300">{item.description}</p>
-              <div className="mt-5 flex flex-wrap gap-2">
-                {item.tech.map((tech) => (
-                  <span key={tech} className="skill-pill">
-                    {tech}
+                <div className="mt-5 pt-4 border-t border-slate-100 dark:border-white/5 flex items-center justify-between">
+                  <div className="flex flex-wrap gap-2">
+                    {item.tech.map((tech) => (
+                      <span key={tech} className="skill-pill">
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
+                  <span className="mono text-xs font-semibold text-cyan-600 dark:text-cyan-400 group-hover:underline">
+                    {en ? "Details →" : "Détails →"}
                   </span>
-                ))}
+                </div>
               </div>
-            </div>
-          </Card>
+            </Card>
+          </a>
         ))}
       </div>
       <Card delay={0.2} className="mt-6 flex flex-col items-start justify-between gap-4 !p-6 md:flex-row md:items-center">

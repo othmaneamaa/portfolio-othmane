@@ -7,6 +7,7 @@ import {
   ArrowUpRight,
   Bot,
   Database,
+  Download,
   Mail,
   MapPin,
   Sparkles,
@@ -32,6 +33,7 @@ const copy = {
       "5th-year Computer Engineering student at EMSI Casablanca. I build LLM agents, data pipelines and full-stack products — measured, validated, and shipped to production. Currently looking for a final-year AI / Data internship.",
     projects: "View my work",
     contact: "Get in touch",
+    cv: "Download CV",
     available: "Open to PFE internship",
     based: "Casablanca, Morocco · Open to remote",
     stats: [
@@ -52,6 +54,7 @@ const copy = {
       "Étudiant en 5ᵉ année à l'EMSI Casablanca. Je conçois des agents LLM, des pipelines data et des produits full-stack — mesurés, validés, mis en production. Je recherche un stage PFE en IA / Data.",
     projects: "Voir mes projets",
     contact: "Me contacter",
+    cv: "Télécharger CV",
     available: "Disponible · Stage PFE",
     based: "Casablanca, Maroc · Remote OK",
     stats: [
@@ -118,6 +121,9 @@ export default function Home() {
             </motion.a>
             <motion.a whileHover={{ y: -3 }} whileTap={{ scale: 0.97 }} href="/contact" className="outline-button">
               {t.contact} <ArrowUpRight size={17} />
+            </motion.a>
+            <motion.a whileHover={{ y: -3 }} whileTap={{ scale: 0.97 }} href="/CV_Othmane_Amaadour_FR_v2.pdf" download className="outline-button">
+              {t.cv} <Download size={17} />
             </motion.a>
           </motion.div>
 
