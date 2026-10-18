@@ -122,7 +122,7 @@ export default function Home() {
             <motion.a whileHover={{ y: -3 }} whileTap={{ scale: 0.97 }} href="/contact" className="outline-button">
               {t.contact} <ArrowUpRight size={17} />
             </motion.a>
-            <motion.a whileHover={{ y: -3 }} whileTap={{ scale: 0.97 }} href="/CV_Othmane_Amaadour_FR_v2.pdf" download className="outline-button">
+            <motion.a whileHover={{ y: -3 }} whileTap={{ scale: 0.97 }} href="/file.pdf" download className="outline-button">
               {t.cv} <Download size={17} />
             </motion.a>
           </motion.div>
