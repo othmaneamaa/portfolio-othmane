@@ -120,7 +120,7 @@ export default function Sidebar() {
                 <a href="https://github.com/othmaneamaa" target="_blank" rel="noopener noreferrer" className="grid h-9 w-9 place-items-center rounded-xl bg-slate-100 dark:bg-white/10"><GithubIcon size={16} /></a>
                 <a href="https://www.linkedin.com/in/othmane-amaadour-8102a5251/" target="_blank" rel="noopener noreferrer" className="grid h-9 w-9 place-items-center rounded-xl bg-slate-100 dark:bg-white/10"><LinkedinIcon size={16} /></a>
                 <a href="mailto:othmaneamaa@gmail.com" className="grid h-9 w-9 place-items-center rounded-xl bg-slate-100 dark:bg-white/10"><Mail size={16} /></a>
-                <a href="/file.pdf" download aria-label="Download CV" className="grid h-9 w-9 place-items-center rounded-xl bg-slate-100 dark:bg-white/10"><Download size={16} /></a>
+                <a href="/CV_Othmane_Amaadour_FR_v2.pdf" download aria-label="Download CV" className="grid h-9 w-9 place-items-center rounded-xl bg-slate-100 dark:bg-white/10"><Download size={16} /></a>
               </div>
             </motion.div>
           </>
@@ -163,7 +163,7 @@ export default function Sidebar() {
               <a href="https://github.com/othmaneamaa" target="_blank" rel="noopener noreferrer" aria-label="GitHub" className="grid h-9 w-9 place-items-center rounded-xl border border-slate-200 bg-white text-slate-600 transition hover:border-slate-900 hover:text-slate-900 dark:border-white/10 dark:bg-white/5 dark:text-slate-300"><GithubIcon size={16} /></a>
               <a href="https://www.linkedin.com/in/othmane-amaadour-8102a5251/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="grid h-9 w-9 place-items-center rounded-xl border border-slate-200 bg-white text-slate-600 transition hover:border-slate-900 hover:text-slate-900 dark:border-white/10 dark:bg-white/5 dark:text-slate-300"><LinkedinIcon size={16} /></a>
               <a href="mailto:othmaneamaa@gmail.com" aria-label="Email" className="grid h-9 w-9 place-items-center rounded-xl border border-slate-200 bg-white text-slate-600 transition hover:border-slate-900 hover:text-slate-900 dark:border-white/10 dark:bg-white/5 dark:text-slate-300"><Mail size={16} /></a>
-              <a href="/file.pdf" download aria-label="Download CV" className="grid h-9 w-9 place-items-center rounded-xl border border-slate-200 bg-white text-slate-600 transition hover:border-slate-900 hover:text-slate-900 dark:border-white/10 dark:bg-white/5 dark:text-slate-300"><Download size={16} /></a>
+              <a href="/CV_Othmane_Amaadour_FR_v2.pdf" download aria-label="Download CV" className="grid h-9 w-9 place-items-center rounded-xl border border-slate-200 bg-white text-slate-600 transition hover:border-slate-900 hover:text-slate-900 dark:border-white/10 dark:bg-white/5 dark:text-slate-300"><Download size={16} /></a>
             </div>
             {mounted && (
               <button onClick={() => setTheme(theme === "dark" ? "light" : "dark")} className="ml-auto grid h-9 w-9 place-items-center rounded-xl border border-slate-200 bg-white text-slate-600 dark:border-white/10 dark:bg-white/5 dark:text-slate-300" aria-label="Toggle theme">
